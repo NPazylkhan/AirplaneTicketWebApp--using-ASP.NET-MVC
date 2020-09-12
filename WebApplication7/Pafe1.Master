@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pafe1.master.cs" Inherits="WebApplication7.Pafe1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><asp:ContentPlaceHolder ID="title" runat="server">
+        Купить билеты онлайн
+        </asp:ContentPlaceHolder></title>
+    <link href="StyleSheet1.css" rel="StyleSheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <form id="form1" runat="server">
+<div >
+    <img src="images/newlogo.jpg" width="200" height="70" alt="Tickets.kz" style="margin-left: 213px" /><asp:ImageButton ID="ImageButton1" ImageUrl="images/instagram.jpg" runat="server" Height="16px" style="margin-left: 800px" Width="16px" />
+    <asp:Button ID="Button1" runat="server" BackColor="#252461" ForeColor="White" OnClick="Button1_Click" style="margin-left: 1px" Text="Мой Билет" Width="136px" Height="29px" ></asp:Button>
+    &nbsp</div>
+<hr />
+
+    <div class="wrapper">
+<div class="menu">
+<ul >
+<li class="navigation_first_item">&nbsp;<a href="Default1.aspx">Главная страница</a></li>
+<li><a href="Default2.aspx">Авиабилеты</a></li>
+<li><a href="Deafult3.aspx">Ж/д билеты</a></li>
+<li ><a href="http://www.booking.com/index.ru.html?aid=802231" target="_blank">Отели</a></li>
+<li ><a href="https://tickets.kz/transfer/">Трансфер из/в аэропорт</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="content">
+<asp:ContentPlaceHolder ID="body" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+<div class="clear"></div>
+<hr />
+<div class="footer">
+<h2><a href="mailto:Copyright@NNN">Copyright@NNN</a></h2>
+    <p>
+        <asp:HyperLink ID="HyperLink1" runat="server">Мой билет</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server">Справка</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server">Блог</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink4" runat="server">О нас</asp:HyperLink>
+        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="images/instagram.jpg" style="margin-left: 844px" Height="20px" Width="20px" />
+        &nbsp;
+        <asp:ImageButton ID="ImageButton3" ImageUrl="images/vkontakte.jpg" Height="20px" Width="20px" runat="server" />
+        &nbsp;
+        <asp:ImageButton ID="ImageButton4" ImageUrl="images/facebook.jpg" Height="20px" Width="20px" runat="server" />
+        &nbsp;
+        <asp:ImageButton ID="ImageButton5" ImageUrl="images/twitter.jpg" Height="20px" Width="20px" runat="server" />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</div>
+            
+</div>
+    </form>
+</body>
+</html>
